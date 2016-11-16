@@ -19,3 +19,12 @@ p {
   font-style: italic;
   font-size: 2rem;
 }
+
+.banner {
+  position: relative;
+}
+.img-flex {
+  padding: 0 1rem;
+  position: absolute;
+  bottom: 1rem;
+}
