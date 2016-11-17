@@ -1,3 +1,9 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
   box-sizing: border-box;
   font-family: "Open Sans";
@@ -7,24 +13,44 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
+h2 {
   background-color: rgba(0, 0, 0, .5);
   color: #fff;
   font-size: 4rem;
   font-weight: bold;
+  text-align: left;
+  line-height: 1.4;
+  display: inline;
 }
 
 p {
   color: #000;
   font-style: italic;
   font-size: 2rem;
+  text-align: left;
+  margin-top: 1.5rem;
 }
 
 .banner {
   position: relative;
+  overflow: hidden;
+  max-height: 500px;
 }
+
 .img-flex {
-  padding: 0 1rem;
+  width: 100%;
+  display: block;
+}
+
+body {
+  margin: 0;
+}
+
+.banner-content {
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  max-width: 50em;
   position: absolute;
-  bottom: 1rem;
 }
